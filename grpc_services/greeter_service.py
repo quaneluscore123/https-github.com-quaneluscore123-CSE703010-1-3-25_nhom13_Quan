@@ -289,5 +289,3 @@ def start_services():
     server.start()
     print(f"✅ Server started on port {port}")
     server.wait_for_termination()
-
-start_services()
