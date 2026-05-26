@@ -4,3 +4,9 @@ Flask
 flask-cors
 python-dotenv
 dotenv
+
+# Testing dependencies
+coverage
+pytest
+pytest-cov
+pytest-mock

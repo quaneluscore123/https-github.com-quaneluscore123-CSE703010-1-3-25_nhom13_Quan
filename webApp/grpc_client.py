@@ -45,7 +45,7 @@ def login(username, password):
     try:
         stub = get_stub()
         response = stub.Authenticate(greeter_pb2.UserRequest(username=username, password=password))
-        return "Success" if response.success else f"Failed: {response.message}"
+        return "Success" if response.success else f"Failed: {response.status}"
     except grpc.RpcError as e:
         return f"gRPC Error: {e.code()} - {e.details()}"
 
